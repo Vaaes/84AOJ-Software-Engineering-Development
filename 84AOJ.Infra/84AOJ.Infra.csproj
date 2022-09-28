@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>_84AOJ.Infra</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Repos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Repos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\84AOJ.Domain\84AOJ.Domain.csproj" />
+  </ItemGroup>
+</Project>

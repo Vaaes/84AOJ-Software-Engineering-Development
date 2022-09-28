@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>_84AOJ.Application</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Interface\" />
+    <None Remove="Request\" />
+    <None Remove="Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interface\" />
+    <Folder Include="Request\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\84AOJ.Shared\84AOJ.Shared.csproj" />
+    <ProjectReference Include="..\84AOJ.Domain\84AOJ.Domain.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Request\RefreshTokenRequest.cs" />
+  </ItemGroup>
+</Project>

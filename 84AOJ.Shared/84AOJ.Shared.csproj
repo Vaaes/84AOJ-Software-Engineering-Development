@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>_84AOJ.Shared</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Interface\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interface\" />
+  </ItemGroup>
+</Project>
